@@ -1,0 +1,31 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<script>
+function change()
+{
+var age=document.getElementById('age').value;
+var username=document.getElementById('uname').value;
+var b="";
+
+document.getElementById('p1').innerHTML=age;
+document.getElementById('p2').innerHTML=username;
+
+if(age==b)
+{
+document.getElementById('p1').innerHTML="enter age";
+document.getElementById('p2').innerHTML="enter username";
+}
+}
+</script>
+<input type="text" id="age" placeholder="Your Age in number" />
+<input type="text" id="uname" placeholder="User Name" />
+<input type="button" value="Show" onclick="change()" />
+
+
+<p id="p1"></p>
+<p id="p2"></p>
+</body>

@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+#div1
+{
+	height:30%;
+	width:50%;
+	background-color:pink;
+	color:white;
+	text-align:center;
+}
+
+.button
+{
+	background-color: gray;
+  border: 3px solid pink;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<script>
+var array1=["hello","welcome","in","my","own","world"]	
+var text;
+function push1()
+{ 
+	var text = document.getElementById("text1").value;
+		array1.push(text);
+}
+
+function display()
+{ 
+	
+	document.getElementById("div1").innerHTML=array1;
+}
+
+
+function pop()
+{ 
+	array1.pop();
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function shift()
+{ 
+	array1.shift();
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function unshift()
+{    var text=document.getElementById("text1").value;
+	array1.unshift(text);
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function changevalue()
+{ 
+	array1[4]=document.getElementById("text1").value;
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function splice()
+{ 
+	array1.splice(3,0,"world","world");
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function delete1()
+{ 
+	array1[0]=document.getElementById("text1").value;
+	document.getElementById("div1").innerHTML=array1;
+}
+
+function merge()
+{ 
+	var a=array1.concat("khushi");
+	document.getElementById("div1").innerHTML=a;
+}
+
+function join()
+{ 
+	document.getElementById("div1").innerHTML=array1.join(" ");
+	
+}
+</script>
+<input type="text" id="text1" placeholder="write your value"/>
+<br/> <br/> 
+<div id="div1">
+  Your Output
+</div>
+<br/> <br/>
+<input type="button" value="PUSH" onclick="push1()"  class="button"/>
+<input type="button" class="button" onclick="display()" value="display"/>
+<input type="button" value="POP" onclick="pop()" class="button"/>
+<input type="button" value="Shift" onclick="shift()" class="button"/>
+<input type="button" value="Unshift" onclick="unshift()" class="button"/>
+<input type="button" value="Changevalue" onclick="changevalue()" class="button"/>
+<input type="button" value="Splice" onclick="splice()" class="button"/>
+<input type="button" value="Delete" onclick="delete1()" class="button"/>
+<input type="button" value="Merge" onclick="merge()" class="button"/>
+<input type="button" value="join" onclick="join()" class="button"/>
+</body>
+</html>
