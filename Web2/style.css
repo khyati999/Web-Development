@@ -1,0 +1,171 @@
+#menu
+{ 
+
+top:0px;
+background-color:white;
+height:07%;
+width:100%;
+font-size:30;
+color:gray;
+position:fixed;
+float:left;
+}
+
+#logo
+{float:left;
+ }
+
+.home
+{
+ float: left;
+ text-align:left;
+ margin-left:80px;
+ color:gray;
+ display:inline;
+}
+
+
+
+#div1
+   {background-image:url("Dual-Monitor-Wallpaper-6.jpg");
+    height:100%;
+    width:100%;
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+	opacity:0.70;
+    background-attachment:fixed;
+    
+    }
+   #div2
+   {position:absolute;
+    top:50%;
+	width:50%;
+    text-align:center;
+    float:center;
+    font-size:40px;
+	background-color:#fff;
+	padding:18px;
+    margin-left:250px;
+    letter-spacing:8px;}
+           
+       
+   #div3
+    {float:center;
+     height=100%;
+     width=100%;
+     background-color:white;     
+     position:absolute;
+     background-position:center;
+     background-size:cover;
+     background-repeat:no-repeat;
+     text-align:center; 
+     opacity:0.70;
+     background-attachment:scroll;
+     color:#666; 
+     }
+     #p1
+     {font-size:30;
+      margin-left:200px;
+      margin-right:200px;
+      line-height:2;}
+     #div4
+      {background-image:url("background.jpg");
+       height:100%;
+       width:100%;
+       position:relative;
+       background-position:center;
+       background-size:cover;
+       background-repeat:no-repeat;
+	   opacity:0.70;
+       background-attachment:scroll;
+        }
+        
+       #div5
+       {float:center;
+        height:100%;
+        width:100%;
+        text-align:center;
+        background-color:#282e34;
+        color:#fff;}
+        
+       #p2
+       {font-size:30;
+        margin-left:200px;
+        margin-right:200px;
+        line-height:2;}
+        #h5
+        {font-size:60px;}
+       #div6 
+        {background-image:url("download.png");
+        height:100%;
+        width:100%;
+        position:relative;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+	    opacity:0.70;
+        background-attachment:scroll;}
+    #diva
+    {position:absolute;
+    top:50%;
+	width:50%;
+    text-align:center;
+    
+    font-size:40px;
+	background-color:transparent;
+	padding:20px;
+    margin-left:250px;
+    letter-spacing:8px;
+    height:50%;}
+        
+      #div7
+      {float:center;
+        height:100%;
+        width:100%;
+        text-align:center;
+        background-color:#635F5F;
+        color:#fff;}
+        
+       #p3
+       {font-size:30;
+        margin-left:200px;
+        margin-right:200px;
+        line-height:2;
+        height:100%;
+        }
+        
+        
+     #h2,#h7, #h5
+     {text-align:center;
+      font-size:60px;
+      margin-top:0px;
+      margin:0px;}
+
+    #phome
+    {
+        display:inline;
+    }
+    
+    
+  .home:hover .dropdown a
+  {
+      display:block;
+  }
+
+.dropdown 
+{
+width:300px;
+text-align:center;
+}
+
+.dropdown a
+{text-decoration:none;
+color:black;
+background:white;
+display:none;
+transition:1s all;}
+
+
+
