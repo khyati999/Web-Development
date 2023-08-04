@@ -1,0 +1,240 @@
+<html>
+<head>
+<style>
+
+#div1
+{
+	height:100%;
+	width:100%;
+	position:relative;
+}
+
+#main
+{
+	height:40%;
+	width:100%;
+	position:relative;
+	z-index:2;
+	margin-bottom:0px;
+}
+
+#submenu
+{
+		height:20%;
+		width:20%;
+		margin-top:0px;
+		position:relative;
+		float:left;
+		background-color:#2385e7;
+}		
+ul
+{
+	text-align:center;
+	font-size:50;
+	color:#eaeff4;
+	margin:40px;
+	display:inline;
+	position:relative;
+}	
+
+.sub1
+{
+	background-color:#2385e7;
+	height:20%;
+	width:80%;
+	position:relative;
+	float:right;
+	margin-top:0px;
+	z-index:1;
+	
+}
+
+ul
+{
+	display:inline;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	position:relative;
+	color:white;
+}
+
+ul li 
+{
+display:inline-block;
+text-decoration:none;
+color:white;
+}
+
+ul li:hover
+{
+	background-color:lightblue;
+	z-index:3;
+	
+}
+
+ul li:hover ul
+{
+	display:block;
+	
+}
+
+ul li ul
+{
+	poosition:relative;
+	width:300px;
+	display:none;
+	
+}
+
+ul li ul li 
+{
+	display:block !important;
+}
+
+ul li ul li a
+{
+display:block;
+
+}
+ul li ul li :hover
+{
+	background:#666;
+	color:white;
+}	
+
+.divimage
+{
+	z-index:-3;
+	position:relative;
+	border:1px solid black;
+	
+}	
+
+.mySlides {display:none;}
+
+.divmenu
+{
+	background-color:#0066ff;
+	border:1px solid black;
+	margin-top:17%;
+	height:60%;
+	text-align:center;
+	color:white;
+	font-size:23;	
+}
+
+</style>
+</head>
+<body>
+<div class="div1" id="div1" >
+
+<div id="main">
+
+<div id="submenu" class="sub11">
+<img src="disney logo.jpg" height="100%" width="100%">
+</div>
+
+<div id="sub1" class="sub1">
+<ul>
+<li><a href="#">MOVIES</a>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+
+</ul>
+</li>
+&emsp;&emsp;&emsp;
+<ul>
+<li><a href="#">PRODUCTS</a>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+
+</ul>
+</li>
+&emsp;&emsp;&emsp;
+<ul>
+<li><a href="#" >GADGETS</a>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="divimage"  style="max-width:3000px" > 
+
+<img class="mySlides" src="disney-characters.jpg " style="width:100%" height="600px">
+  <img class="mySlides" src="pic-1785-1.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="mississauga_kariya_park_canada-wide.jpg" style="width:100%" alt="no image" height="600px">
+
+
+</div>
+
+</div>
+
+<div class="divmenu" width="3000px">
+<span id="span1">
+<h1> HOW CAN WE HELP YOU?</h1>
+<form method="Post">
+<p>First Name&emsp;<input type="text" name="fname" placeholder="First Name" maxlength="20">
+<p>Last Name&emsp;<input type="text" name="Lname" placeholder="Last Name" maxlength="20">
+<p>Message Us<br><textarea name="bio" rows="5" cols="10"></textarea>
+<br>
+Gender
+<br>
+Male<input type="radio" name="male" id="male">
+Female<input type="radio" name="male" id="female">
+<br>
+<p>Do You agree with our T&C 
+<input type="checkbox" name="agree" id="tc">
+<br>
+
+<label>Select Course</label>
+<select name="Courses" id="course">
+<option value="html">HTML</option>
+<option value="c">C</option>
+<option value="Python">Python</option>
+</select>
+
+<br><input type="button" value="Submit"/></br>
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) 
+  {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}  
+  
+  x[myIndex-1].style.display = "inline"; 
+  
+  setTimeout(carousel, 2000); 
+}
+
+
+
+</script>
+</body>
+</html>
